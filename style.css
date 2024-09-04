@@ -114,3 +114,8 @@ input[type="password"]:focus {
 button:hover {
   background-color: #218838; /* Cor de fundo ao passar o mouse */
 }
+
+.logo {
+  max-width: 100px; /* Ajuste o tamanho conforme necessário */
+  margin-right: 20px;
+}
