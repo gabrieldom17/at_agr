@@ -123,6 +123,10 @@ input[type="text"], input[type="password"] {
       button:hover {
           background-color: #218838; /* Cor de fundo ao passar o mouse */
       }
+      .container {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo (o link) à direita */
+}
         </style>
         
         
@@ -139,7 +143,9 @@ input[type="text"], input[type="password"] {
               </div>
           </div>
           <a href="Entrar.html">ENTRAR</a>
-          <a href="sobre.html">SOBRE</a>
+          <div class="container">
+            <a href="sobre.html" class="right">SOBRE</a>
+            </div>
       </div>
   
 </head>

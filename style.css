@@ -145,3 +145,8 @@ button:hover {
   display: block;
   line-height: 50px; /* Igualar a altura do botão para centralizar verticalmente */
 }
+
+.container {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo (o link) à direita */
+}

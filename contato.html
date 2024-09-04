@@ -107,7 +107,10 @@
           display: block;
           line-height: 50px; /* Igualar a altura do botão para centralizar verticalmente */
       }
-  
+      .container {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo (o link) à direita */
+}
         </style>
         
         
@@ -124,7 +127,9 @@
               </div>
           </div>
           <a href="Entrar.html">ENTRAR</a>
-          <a href="sobre.html" class="right">SOBRE</a>
+          <div class="container">
+            <a href="sobre.html" class="right">SOBRE</a>
+            </div>
       </div>
           
       <img src="Logo.jpg" class="Logo">
