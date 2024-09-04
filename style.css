@@ -1,47 +1,45 @@
-/* Estilos para os campos de entrada */
-input[type="text"], input[type="password"] {
-    width: calc(100% - 20px); /* Largura ajustada */
-    padding: 10px; /* Espaçamento interno */
-    margin: 10px 0; /* Margem */
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
     font-size: 16px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Contorno com sombra */
-}
-
-/* Estilos para o botão */
-button {
-    width: 100%;
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    padding: 15px 0; /* Espaçamento interno */
-    margin: 10px 0; /* Margem */
-    border: none; /* Sem borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de ponteiro */
-    font-size: 18px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Contorno com sombra */
-}
-
-button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
-}
-
-
-label {
-    font-size: 18px;
-    margin-top: 10px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-}
-input[type="text"]:focus,
-input[type="password"]:focus {
-    border-color: #007bff; /* Cor da borda ao focar */
-    outline: none; /* Remove o outline padrão */
-}
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-/* Adiciona efeito de hover no botão */
-button:hover {
-    background-color: #218838; /* Cor de fundo ao passar o mouse */
-}
+  .center{
+    text-align: center;
+  }
