@@ -31,7 +31,7 @@
 
 /* Dropdown button */
 .dropbtn {
-  background-color: #e02828;
+  background-color: #333;
   border: none;
   outline: none;
   color: white;
@@ -77,52 +77,14 @@
   display: block;
 }
 
-input[type="text"], input[type="password"] {
-          width: calc(100% - 20px);
-          padding:  10px;
-          margin: 10px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          box-sizing: border-box;
-          font-size: 16px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Contorno com sombra */
-      }
+.logo {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 20px;
+}
 
-      button {
-          width: 100%;
-          background-color: #4CAF50;
-          color: white;
-          padding: 15px 0;
-          margin: 10px 0;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-          font-size: 18px;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Contorno com sombra */
-      }
-
-      button:hover {
-          background-color: #45a049;
-      }
-
-      
-
-      label {
-          font-size: 18px;
-          margin-top: 10px;
-          display: block;
-      }
-      input[type="text"]:focus,
-      input[type="password"]:focus {
-          border-color: #007bff; /* Cor da borda ao focar */
-          outline: none; /* Remove o outline padrão */
-      }
-
-      /* Adiciona efeito de hover no botão */
-      button:hover {
-          background-color: #218838; /* Cor de fundo ao passar o mouse */
-      }
+.right{
+  text-align: right;
+}
         </style>
         
         
@@ -139,26 +101,11 @@ input[type="text"], input[type="password"] {
               </div>
           </div>
           <a href="Entrar.html">ENTRAR</a>
-          <a href="sobre.html">SOBRE</a>
+          <a href="sobre.html" class="right">SOBRE</a>
       </div>
-  
-</head>
+          
+      <img src="Logo.jpg" class="Logo">
 
-<body>
-  <img src="Logo.jpg" alt=" " />
+      <body>
 
-  <h2>Entrar</h2>
-  <label for="username">Usuário</label>
-  <input type="text" id="username" name="username" placeholder="Digite seu usuário">
-
-  <label for="password">Senha</label>
-  <input type="password" id="password" name="password" placeholder="Digite sua senha">
-
-  <button type="submit">Entrar</button>
-  <a href="#">Esqueci a senha</a>
-
-  
-  <script src="script.js"></script>
-</body>
-
-</html>
+        <h1> Sobre </h1>
