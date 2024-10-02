@@ -85,9 +85,46 @@
 .right{
   text-align: right;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
 .container {
-  display: flex;
-  justify-content: flex-end; /* Alinha o conteúdo (o link) à direita */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
         </style>
         
@@ -112,21 +149,28 @@
           
       <img src="Logo.jpg" class="Logo">
           <body>
-  <h1 class="center"> Acontece no IFSP!! </h1><br>
-  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <clipPath id="oval-clip">
-        <ellipse cx="150" cy="100" rx="150" ry="100"/>
-      </clipPath>
-    </defs>
-    <image href="SEJA_RARO.jpg" width="300" height="200" clip-path="url(#oval-clip)" class="center"/>
-  </svg> <br><br>
-
-  <div style="text-align: center;">
-      <u style="text-decoration-color: blue;">Aniversário do IFSP - Pirituba - Palestra Augusto Aiello</u>
-      <hr style="border: none; border-bottom: 1px dashed black; width: 100%;">
+            <div class="container">
+              <div class="card">
+                <img src="eleicoes.jpg" alt="Eleições IFSP">
+                <h3>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</h3>
+            <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu campus</p>
+        </div>
+        <div class="card">
+          <img src="snct.jpg" alt="Semana Nacional de Ciência e Tecnologia">
+          <h3>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h3>
+          <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+      </div>
+      <div class="card">
+        <img src="residencia.png" alt="Residência Pedagógica">
+        <h3>IFSP oferece bolsa aos voluntários da Residência Pedagógica</h3>
+        <p>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+    </div>
+    <div class="card">
+      <img src="maratona.jpeg" alt="Maratona InterIF">
+      <h3>Inscrições abertas para a III Maratona InterIF</h3>
+      <p>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
   </div>
-
+</div>
   <iframe width="702" height="363" src="https://www.youtube.com/embed/5g5LQe3m8Po" title="Desafio de Inovação: webinar com executivos da empresa Sem Parar e representantes da Inova IFSP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="text-align: center;"></iframe>
 
  <a href="https://www.facebook.com/ifsppirituba"><img src="facebook.png" width="41" height="43" title="IFSP Facebook" alt="IFSP Facebook"></a>
